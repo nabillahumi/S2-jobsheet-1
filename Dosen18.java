@@ -9,12 +9,12 @@ public class Dosen18 {
     public Dosen18() {
 
     }
-    public Dosen18(String ID, String nm, boolean sa, int tb, String bk){
+    public Dosen18(String ID, String nm, boolean status, int tahun, String bidang){
         idDosen = ID;
         nama = nm;
-        statusAktif = sa;
-        tahunBergabung = tb;
-        bidangKeahlian = bk;
+        statusAktif = status;
+        tahunBergabung = tahun;
+        bidangKeahlian = bidang;
     }
         
     void tampilInformasi(){
@@ -28,7 +28,6 @@ public class Dosen18 {
     
     void setStatusAktif(boolean statusBaru){
         statusAktif = statusBaru;
-        System.out.println("Status dosen telah diubah menjadi: " + (statusAktif ? "Aktif" : "Tidak Aktif"));
     }
     
     void hitungMasaKerja(int thnSekarang) {
